@@ -12,6 +12,9 @@
 
     <section class="container">
 
+        <img class="frame-image" alt="1978 Space Invader" src="images/frame3.png">
+        <img class="bg-image" alt="Background" src="images/bg-taito.png">
+
         <!-- Screen -->
 
         <section class="screen">
@@ -22,8 +25,9 @@
                 <div class="screen__cl-score">
                     <span>
                         Score&#60;1&#62;
+                        <!-- Score -->
                     </span>
-                    <span>
+                    <span id="scores_one">
                         0000
                     </span>
                 </div>
@@ -31,7 +35,7 @@
                     <span>
                         Hi-Score
                     </span>
-                    <span>
+                    <span id="scores_hi">
                         0000
                     </span>
                 </div>
@@ -39,7 +43,7 @@
                     <span>
                         Score&#60;2&#62;
                     </span>
-                    <span>
+                    <span id="scores_two">
                         0000
                     </span>
                 </div>
@@ -48,8 +52,39 @@
             <!-- Main screen -->
 
             <div id="screen_m" class="screen__main">
-                <span id="main__info" class="main__info">
-                    Push</br>1 or 2 players
+                <span id="main__info" class="main__info main__info--first">
+                    INSERT COIN</br>
+                    &#60;1 or 2 players&#62;</br>
+                    *1 PLAYER 1 COIN</br>
+                    *2 PLAYER 2 COINS</br>
+                    &#60;PRESS ENTER&#62;
+                </span>
+                <span id="main__info" class="main__info--second">
+                    <span id="fst-line"></span>
+                    <span id="snd-line"></span>
+                    <span id="trd-line">
+                        *SCORE ADVANCE TABLE*
+                        <span>
+                            <span class="icon-invader">V</span>
+                            <span id="trd-line--1"></span>
+                        </span>
+                        
+                        <span>
+                            <span class="icon-invader">D</span>
+                            <span id="trd-line--2"></span>
+                        </span>
+
+                        <span>
+                            <span class="icon-invader">B</span>
+                            <span id="trd-line--3"></span>
+                        </span>
+
+                        <span>
+                            <span class="icon-invader">G</span>
+                            <span id="trd-line--4"></span>
+                        </span>
+
+                    </span>
                 </span>
             </div>
 
@@ -57,16 +92,25 @@
 
             <div class="screen__footer">
                 <span id="lives" class="screen__lives">
-                    Lives
+                    <span id="lives_number" class="lives__num">
+                        3
+                    </span>
+                    <span class="lives__font">
+                        W W W
+                    </span>
                 </span>
                 <span class="screen__credits">
-                    Credits
+                    Credits 1
                 </span>
             </div>
 
         </section>
 
     </section>
-
+    
+    <section class="no-info">
+        
+    </section>
+    
 </body>
 </html>
