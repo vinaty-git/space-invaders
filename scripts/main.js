@@ -628,7 +628,7 @@ addEventListener("keyup", (event) => {
         board.insertAdjacentHTML('beforeend', missile);
 
         // Sound effect
-        var audio = new Audio('../sounds/shoot.wav');
+        var audio = new Audio('https://github.com/vinaty-git/space-invaders/blob/5c24ab1b2049c0f7c4a172ce3511a18a87629813/sounds/shoot.wav');
         audio.volume = 0.3;
         audio.play();
 
