@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Invaders';
-    src: url('/styles/fonts/space-invaders-extended.ttf'); 
+    src: url('./styles/fonts/space-invaders-extended.ttf'); 
 }
 @font-face {
     font-family: 'Invaders-img';
-    src: url('/styles/fonts/invaders.ttf'); 
+    src: url('./styles/fonts/invaders.ttf'); 
 }
 html {
     height: 100%;    
@@ -261,8 +261,6 @@ body {
     position: absolute;
     font-size: 36px;
     color: violet;
-    /* height: 9%;
-    width: 44px; */
     text-align: center;
     text-shadow: 3px 0px 15px rgb(234, 87, 224);
 }
