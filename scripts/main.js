@@ -18,14 +18,14 @@ var bossCounter = 0; // initial counter to spawn a boss
 var invadersReady = false; // trigger - invaders are already spawned true/false
 
 // Audio
-var audioBoss = new Audio('./../sounds/ufo_highpitch.wav');
-var audio1 = new Audio('./../sounds/fastinvader1.wav');
+var audioBoss = new Audio('../sounds/ufo_highpitch.wav');
+var audio1 = new Audio('../sounds/fastinvader1.wav');
 audio1.volume = 0.2;
-var audio2 = new Audio('./../sounds/fastinvader2.wav');
+var audio2 = new Audio('../sounds/fastinvader2.wav');
 audio2.volume = 0.2;
-var audio3 = new Audio('./../sounds/fastinvader3.wav');
+var audio3 = new Audio('../sounds/fastinvader3.wav');
 audio3.volume = 0.2;
-var audio4 = new Audio('./../sounds/fastinvader4.wav');
+var audio4 = new Audio('../sounds/fastinvader4.wav');
 audio4.volume = 0.2;
 
 audioBoss.volume = 0.2;
@@ -123,7 +123,7 @@ function mainLoop() {
                 currentPlayer.textContent = "X";
 
                 // Sound effect
-                var audio = new Audio('./../sounds/explosion.wav');
+                var audio = new Audio('../sounds/explosion.wav');
                 audio.volume = 0.3;
                 audio.play();
 
@@ -220,7 +220,7 @@ function mainLoop() {
 
                             // Sound effect
                             audioBoss.loop = false;
-                            var audio = new Audio('./../sounds/ufo_lowpitch.wav');
+                            var audio = new Audio('../sounds/ufo_lowpitch.wav');
                             audio.volume = 0.2;
                             audio.play();
                         },50);
@@ -241,7 +241,7 @@ function mainLoop() {
                         allInvaders[inv].remove();
 
                         // Sound effect
-                        var audio = new Audio('./../sounds/invaderkilled.wav');
+                        var audio = new Audio('../sounds/invaderkilled.wav');
                         audio.volume = 0.3;
                         audio.play();
 
@@ -628,7 +628,7 @@ addEventListener("keyup", (event) => {
         board.insertAdjacentHTML('beforeend', missile);
 
         // Sound effect
-        var audio = new Audio('./../sounds/shoot.wav');
+        var audio = new Audio('../sounds/shoot.wav');
         audio.volume = 0.3;
         audio.play();
 
